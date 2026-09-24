@@ -33,8 +33,7 @@ export default function Header() {
       <header className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`} id="siteNav">
         <div className={`wrap ${styles.navInner}`}>
           <a href="#top" className={styles.logo}>
-            <span className={styles.mark}>Atarashii</span>
-            <span className={styles.sub}>Serenity</span>
+            <img src="/images/logo.png" alt="Atarashii Logo" className={styles.logoImg} />
           </a>
           <ul className={styles.navLinks}>
             <li><a href="#overview">Overview</a></li>

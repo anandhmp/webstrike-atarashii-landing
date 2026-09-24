@@ -64,13 +64,13 @@
   align-items: center;
   gap: 10px;
 
-  &::before {
-    content: "";
-    width: 18px;
-    height: 1px;
-    background: currentColor;
-    transition: background 0.25s ease;
-  }
+  // &::before {
+  //   content: "";
+  //   width: 18px;
+  //   height: 1px;
+  //   background: currentColor;
+  //   transition: background 0.25s ease;
+  // }
 }
 
 .chevron {
@@ -137,13 +137,21 @@
   }
 }
 
-.locationMedia {
-  aspect-ratio: 4 / 3;
+.locationMediaWrap {
   position: relative;
-  border-radius: 2px;
+  // border-radius: 6px;
   overflow: hidden;
   position: sticky;
   top: 100px;
+  // box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.locationImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  // border-radius: 6px;
 }
 
 @media (max-width: 900px) {

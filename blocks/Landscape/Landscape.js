@@ -1,14 +1,13 @@
 import React from 'react';
-import Media from '../Media/Media';
 import styles from './Landscape.module.scss';
 
 export default function Landscape() {
   return (
     <section className={styles.landscape}>
-      <Media
-        src="https://picsum.photos/seed/atarashii-landscape2/1920/1200"
-        alt="Landscape Background"
-        label="Landscape Image / Cinematic Video"
+      <img
+        src="/images/landscape-bg.jpg"
+        alt="Atarashii Serenity Landscape Balcony View"
+        className={styles.landscapeImg}
       />
       <div className={styles.landscapeContent}>
         <h2 className="reveal">A home surrounded by stillness.</h2>

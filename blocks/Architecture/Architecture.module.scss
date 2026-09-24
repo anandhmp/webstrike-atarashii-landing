@@ -14,6 +14,7 @@
     .storyText {
       order: 2;
     }
+
     .storyMedia {
       order: 1;
     }
@@ -75,33 +76,44 @@
 .storyMedia {
   aspect-ratio: 3 / 4;
   position: relative;
+  overflow: hidden;
+  border-radius: 4px;
 
   &.wide {
     aspect-ratio: 4 / 3;
   }
 }
 
-.architectureBlock + .architectureBlock {
-  margin-top: 130px;
+.storyImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
+
+// .architectureBlock+.architectureBlock {
+//   margin-top: 130px;
+// }
 
 @media (max-width: 900px) {
   .section {
     padding: 100px 0;
   }
+
   .storyRow,
   .storyRow.reverse {
     grid-template-columns: 1fr;
   }
 
   .storyRow.reverse {
+
     .storyText,
     .storyMedia {
       order: initial;
     }
   }
 
-  .architectureBlock + .architectureBlock {
+  .architectureBlock+.architectureBlock {
     margin-top: 80px;
   }
 }

@@ -34,8 +34,8 @@ export default function SerenityExperience() {
     <section className={styles.section} id="serenity-experience">
       <div className="wrap">
         <div className={`${styles.titleBox} reveal`}>
-          <h2>The Serenity<br />Experience</h2>
-          <div className={styles.goldLine} />
+          <h2>The Serenity Experience</h2>
+          {/* <div className={styles.goldLine} /> */}
         </div>
 
         <div className={styles.experienceGrid}>

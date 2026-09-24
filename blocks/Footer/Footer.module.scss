@@ -14,22 +14,13 @@
 
 .footerBrand {
   .logo {
-    color: var(--warm-white);
-    font-family: var(--serif);
-    font-size: 20px;
-    letter-spacing: 0.04em;
-    display: flex;
-    flex-direction: column;
-    line-height: 1.05;
+    display: inline-block;
 
-    .sub {
-      font-family: var(--sans);
-      font-size: 9px;
-      letter-spacing: 0.32em;
-      text-transform: uppercase;
-      color: var(--gold);
-      font-weight: 600;
-      margin-top: 4px;
+    .logoImg {
+      height: 72px;
+      width: auto;
+      object-fit: contain;
+      display: block;
     }
   }
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import Media from '../Media/Media';
 import styles from './SampleResidence.module.scss';
 
 export default function SampleResidence() {
@@ -51,8 +50,8 @@ export default function SampleResidence() {
           {/* Left Column Text & Feature List */}
           <div className={`${styles.leftCol} reveal`}>
             <div className={styles.titleBox}>
-              <h2>The<br />Sample Residence</h2>
-              <div className={styles.goldLine} />
+              <h2>The Sample Residence</h2>
+              {/* <div className={styles.goldLine} /> */}
               <div className={styles.subTitle}>A home you can walk through today.</div>
               <p className={styles.introDesc}>
                 Step inside calm, light-filled spaces finished with warm materials, crafted details and practical planning — a true reflection of the Atarashii Serenity promise.
@@ -73,15 +72,15 @@ export default function SampleResidence() {
           </div>
 
           <div className={`${styles.rightCol} reveal reveal-delay-1`}>
-            <Media
-              src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80"
-              alt="Sample Residence Courtyard Pond"
-              label="Indoor Water Courtyard Image"
+            <img
+              src="/images/sample-residence-1.jpg"
+              alt="Sample Residence Main Entrance Door"
+              className={styles.sampleImg}
             />
-            <Media
-              src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80"
-              alt="Sample Residence Dining Space"
-              label="Sample Flat Dining Room Image"
+            <img
+              src="/images/sample-residence-2.jpg"
+              alt="Sample Residence Master Bathroom"
+              className={styles.sampleImg}
             />
           </div>
         </div>

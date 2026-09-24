@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Media from '../Media/Media';
 import styles from './Location.module.scss';
 
 export default function Location() {
@@ -95,12 +94,13 @@ export default function Location() {
             })}
           </div>
 
-          <Media
-            src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1200&q=80"
-            alt="Location Connectivity Map"
-            label="Location Map / Image"
-            className={`${styles.locationMedia} reveal reveal-delay-2`}
-          />
+          <div className={`${styles.locationMediaWrap} reveal reveal-delay-2`}>
+            <img
+              src="/images/location-map.jpg"
+              alt="Atarashii Serenity 3D Aerial Location Map"
+              className={styles.locationImg}
+            />
+          </div>
         </div>
       </div>
     </section>

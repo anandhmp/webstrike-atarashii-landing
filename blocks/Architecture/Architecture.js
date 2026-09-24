@@ -1,5 +1,4 @@
 import React from 'react';
-import Media from '../Media/Media';
 import styles from './Architecture.module.scss';
 
 export default function Architecture() {
@@ -33,12 +32,15 @@ export default function Architecture() {
             </div>
           </div>
 
-          <Media
-            src="https://picsum.photos/seed/atarashii-arch1/1200/1500"
-            alt="Exterior Architecture"
-            label="Exterior Architecture Image"
-            className={`${styles.storyMedia} reveal reveal-delay-1`}
-          />
+          <div className={`${styles.storyMedia} reveal reveal-delay-1`}>
+            <img
+              src="/images/architecture-exterior.jpg"
+              alt="Exterior Architecture"
+              width={600}
+              height={800}
+              className={styles.storyImg}
+            />
+          </div>
         </div>
 
         <div className={`${styles.architectureBlock} ${styles.storyRow} ${styles.reverse}`}>
@@ -80,12 +82,15 @@ export default function Architecture() {
             </div>
           </div>
 
-          <Media
-            src="https://picsum.photos/seed/atarashii-arch2/1500/1100"
-            alt="Interior Outdoor Living"
-            label="Interior Image"
-            className={`${styles.storyMedia} ${styles.wide} reveal reveal-delay-1`}
-          />
+          <div className={`${styles.storyMedia} ${styles.wide} reveal reveal-delay-1`}>
+            <img
+              src="/images/lobby-experience.jpg"
+              alt="Lobby Experience"
+              width={800}
+              height={600}
+              className={styles.storyImg}
+            />
+          </div>
         </div>
       </div>
     </section>

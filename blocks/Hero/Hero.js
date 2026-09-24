@@ -32,6 +32,7 @@ export default function Hero() {
       </div>
 
       <div className={styles.heroContent}>
+        <img src="/images/logo.png" alt="Atarashii Logo" className={styles.heroLogoImg} />
         <div className={styles.heroEyebrow}>Atarashii Serenity</div>
         <h1 className={styles.heroTitle}>A More Refined Way to Live</h1>
         <div className={styles.heroSub}>Nearing Completion</div>

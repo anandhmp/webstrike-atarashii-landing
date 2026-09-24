@@ -1,5 +1,4 @@
 import React from 'react';
-import Media from '../Media/Media';
 import styles from './Project.module.scss';
 
 export default function Project() {
@@ -20,20 +19,22 @@ export default function Project() {
         </div>
 
         <div className={styles.projectLayout}>
-          <Media
-            src="https://picsum.photos/seed/atarashii-landscape1/1200/1500"
-            alt="Landscape"
-            label="Landscape Image"
-            className={`${styles.projectMainImg} reveal`}
-          />
+          <div className={`${styles.projectMainImgWrap} reveal`}>
+            <img
+              src="/images/project-main.png"
+              alt="Atarashii Serenity Project Detail"
+              className={styles.projectMainImg}
+            />
+          </div>
 
           <div className={styles.projectSide}>
-            <Media
-              src="https://picsum.photos/seed/atarashii-interior1/1100/800"
-              alt="Interior"
-              label="Interior Image"
-              className={`${styles.projectSideImg} reveal reveal-delay-1`}
-            />
+            <div className={`${styles.projectSideImgWrap} reveal reveal-delay-1`}>
+              <img
+                src="/images/project-interior.jpg"
+                alt="Atarashii Serenity Interior"
+                className={styles.projectSideImg}
+              />
+            </div>
 
             <div className={`${styles.projectPoints} reveal reveal-delay-2`}>
               {points.map((pt) => (

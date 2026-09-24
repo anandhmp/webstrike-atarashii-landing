@@ -20,10 +20,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Atarashii Serenity — A Quieter Way of Living</title>
+        <title>Atarashii Serenity - A Quieter Way of Living</title>
         <meta
           name="description"
-          content="Atarashii Serenity — a private collection of residences shaped by architecture, nature, and an uncompromising attention to detail."
+          content="Atarashii Serenity - a private collection of residences shaped by architecture, nature, and an uncompromising attention to detail."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
@@ -39,7 +39,7 @@ export default function Home() {
         <Residences />
         <SerenityExperience />
         <SampleResidence />
-        <Masterplan />
+        {/* <Masterplan /> */}
         <Location />
         <VideoSection />
         <FinalCta />

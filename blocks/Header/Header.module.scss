@@ -29,26 +29,14 @@
 }
 
 .logo {
-  font-family: var(--serif);
-  font-size: 20px;
-  letter-spacing: 0.04em;
-  color: var(--warm-white);
   display: flex;
-  flex-direction: column;
-  line-height: 1.05;
+  align-items: center;
 
-  .mark {
-    font-size: 20px;
-  }
-
-  .sub {
-    font-family: var(--sans);
-    font-size: 9px;
-    letter-spacing: 0.32em;
-    text-transform: uppercase;
-    color: var(--gold);
-    font-weight: 600;
-    margin-top: 4px;
+  .logoImg {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    display: block;
   }
 }
 
@@ -119,9 +107,11 @@
     &:nth-child(1) {
       top: 0;
     }
+
     &:nth-child(2) {
       top: 8px;
     }
+
     &:nth-child(3) {
       top: 16px;
     }
@@ -162,11 +152,13 @@
   .navLinks {
     display: none;
   }
+
   .navCta {
     a {
       display: none;
     }
   }
+
   .navBurger {
     display: block;
   }

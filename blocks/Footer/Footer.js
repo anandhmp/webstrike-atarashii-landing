@@ -8,8 +8,7 @@ export default function Footer() {
         <div className={styles.footerTop}>
           <div className={styles.footerBrand}>
             <a href="#top" className={styles.logo}>
-              <span className={styles.mark}>Atarashii</span>
-              <span className={styles.sub}>Serenity</span>
+              <img src="/images/logo.png" alt="Atarashii Logo" className={styles.logoImg} />
             </a>
             <p>
               Architecture · Wellness · Luxury<br />
