@@ -9,22 +9,27 @@ export default function Architecture() {
         <div className={`${styles.architectureBlock} ${styles.storyRow}`}>
           <div className={`${styles.storyText} reveal`}>
             <div className="eyebrow">01 / Architecture</div>
-            <h2>Architecture that belongs to its surroundings.</h2>
+            <h2>A Philosophy of Living, Made Tangible</h2>
             <p>
-              Every residence at Serenity is composed around light, ventilation, and proportion — never imposed on the land, but drawn out from it. Deep overhangs, cross ventilation, and considered material palettes allow the architecture to feel inevitable rather than added.
+              Inspired by Japanese philosophy. Crafted
+              for a life of balance, beauty and serenity.
             </p>
             <div className={styles.storyList}>
               <div>
-                <span>Natural Light</span>
-                <span>North–South Orientation</span>
+                <span>Ma - Space with Purpose</span>
+                <span>A home where nature becomes part of your everyday rhythm.</span>
               </div>
               <div>
-                <span>Ventilation</span>
-                <span>Cross-Flow Design</span>
+                <span>Shizen - Living with Nature</span>
+                <span>Living with Nature</span>
               </div>
               <div>
-                <span>Privacy</span>
-                <span>Layered Screening</span>
+                <span>Omotenashi - Thoughtful Hospitality</span>
+                <span>Warm, welcoming spaces that make every arrival feel special.</span>
+              </div>
+              <div>
+                <span>Monozukuri - Crafted with Excellence</span>
+                <span>Built with precision, designed to stand the test of time</span>
               </div>
             </div>
           </div>
@@ -39,11 +44,47 @@ export default function Architecture() {
 
         <div className={`${styles.architectureBlock} ${styles.storyRow} ${styles.reverse}`}>
           <div className={`${styles.storyText} reveal`}>
-            <div className="eyebrow">02 / Indoor–Outdoor Living</div>
-            <h2>Rooms that step gently into the landscape.</h2>
+            <div className="eyebrow">02 / Lobby Experience</div>
+            <h2>The Art of a Warm Welcome</h2>
             <p>
-              Living spaces open onto private courtyards and gardens, dissolving the line between interior and exterior. Materiality carries through — stone, timber, and warm plaster move from indoors to out without interruption, so the landscape feels like an extension of home.
+              A lobby experience inspired by boutique hospitality.
             </p>
+            <div className={styles.storyList}>
+              <div>
+                <span>Designer Lobby</span>
+                <span>A refined first impression.
+                  Warm materials, soft lighting, and timeless design.
+                </span>
+              </div>
+              <div>
+                <span>Resident Café</span>
+                <span>Savor, connect, unwind.
+                  A relaxed café setting to start your day or pause in between.</span>
+              </div>
+              <div>
+                <span>Coffee Machine</span>
+                <span>Barista-style convenience.
+                  Freshly brewed, anytime you need.
+                </span>
+              </div>
+              <div>
+                <span>Curated Library</span>
+                <span>A quiet corner for inspiration and escape. Books, light, and calm.</span>
+              </div>
+              <div>
+                <span>Vending Convenience</span>
+                <span>Thoughtful essentials, always within reach, discreet and
+                  convenient.</span>
+              </div>
+              <div>
+                <span>Biometric Access</span>
+                <span>Seamless entry. Secure, private, and effortlessly modern.</span>
+              </div>
+              <div>
+                <span>Warm Hospitality Led Design</span>
+                <span>Crafted for comfort. Every detail designed to make you feel at home</span>
+              </div>
+            </div>
           </div>
 
           <Media

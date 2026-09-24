@@ -9,15 +9,13 @@ export default function Intro() {
         <div className={styles.introGrid}>
           <div className="reveal">
             <div className="eyebrow">The Serenity Experience</div>
-            <h2>Designed for a life that feels beautifully unhurried.</h2>
+            <h2>A More Comfortable, Connected and Complete Way of Living</h2>
           </div>
           <div className={`${styles.introCopy} reveal reveal-delay-1`}>
-            <p>
-              Atarashii Serenity is a private residential environment where architecture and landscape are conceived together, not layered one atop the other. Every threshold, courtyard, and window has been considered for the quality of light and quiet it brings into daily life.
-            </p>
-            <p>
-              Set apart from the pace of the city, Serenity offers a rare kind of privacy — spaces that feel entirely your own, surrounded by land that has been shaped with patience rather than urgency.
-            </p>
+            <p>Serenity is more than a residence. It is a carefully considered way of living. From the architecture and materials to the spaces created for wellness, leisure and everyday moments, every detail has been thoughtfully planned to bring greater comfort and calm to life.</p>
+
+            <p>Here, luxury is not about excess. It is about living well, in a space that feels truly yours. </p>
+
           </div>
         </div>
 

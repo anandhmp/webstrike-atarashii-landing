@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Header from '../blocks/Header/Header';
 import Hero from '../blocks/Hero/Hero';
 import Intro from '../blocks/Intro/Intro';
+import Highlights from '../blocks/Highlights/Highlights';
 import Project from '../blocks/Project/Project';
 import Architecture from '../blocks/Architecture/Architecture';
 import Landscape from '../blocks/Landscape/Landscape';
@@ -31,6 +32,7 @@ export default function Home() {
       <main>
         <Hero />
         <Intro />
+        <Highlights />
         <Project />
         <Architecture />
         <Landscape />

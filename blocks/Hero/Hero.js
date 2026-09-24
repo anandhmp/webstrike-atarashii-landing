@@ -32,11 +32,12 @@ export default function Hero() {
       </div>
 
       <div className={styles.heroContent}>
-        <div className={styles.heroEyebrow}>Atarashii Presents</div>
-        <h1 className={styles.heroTitle}>Serenity</h1>
-        <div className={styles.heroSub}>A quieter way of living.</div>
+        <div className={styles.heroEyebrow}>Atarashii Serenity</div>
+        <h1 className={styles.heroTitle}>A More Refined Way to Live  </h1>
+        <div className={styles.heroSub}>Nearing Completion</div>
         <p className={styles.heroCopy}>
-          A private collection of residences shaped by architecture, nature, and an uncompromising attention to detail.
+          2 & 3 BHK Ultra-Luxury Apartments in Vattiyoorkavu, Trivandrum
+          Starting from ₹75 Lakhs
         </p>
         <div className={styles.heroActions}>
           <a href="#overview" className="btn btn-gold">Explore Serenity</a>

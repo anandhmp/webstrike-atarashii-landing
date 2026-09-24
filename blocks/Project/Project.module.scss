@@ -37,29 +37,33 @@
 }
 
 .projectPoints {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding-top: 6px;
 }
 
 .projectPoint {
   padding-top: 18px;
   border-top: 1px solid rgba(39, 73, 62, 0.18);
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 16px;
+  align-items: start;
 
   .num {
     font-family: var(--serif);
     font-style: italic;
     color: var(--gold);
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 1.2;
   }
 
   h4 {
-    font-size: 16.5px;
+    font-size: 17px;
     font-weight: 500;
     font-family: var(--sans);
     color: var(--dark-green);
-    margin-top: 8px;
   }
 
   p {
@@ -67,6 +71,7 @@
     color: #5a5f56;
     margin-top: 6px;
     line-height: 1.65;
+    grid-column: 2;
   }
 }
 
@@ -75,9 +80,6 @@
     padding: 100px 0;
   }
   .projectLayout {
-    grid-template-columns: 1fr;
-  }
-  .projectPoints {
     grid-template-columns: 1fr;
   }
 }

@@ -4,10 +4,9 @@ import styles from './Project.module.scss';
 
 export default function Project() {
   const points = [
-    { num: '01', title: 'Privacy', desc: 'Residences set apart, screened by landscape and distance.' },
-    { num: '02', title: 'Natural Light', desc: "Orientation and openings composed around the sun's path." },
-    { num: '03', title: 'Open Spaces', desc: 'Courtyards and terraces that extend living outward.' },
-    { num: '04', title: 'Community', desc: 'Shared landscapes that bring residents together gently.' },
+    { num: '01', title: 'Architecture', desc: 'Timeless design shaped through balance, proportion, and purpose.' },
+    { num: '02', title: 'Wellness', desc: 'Spaces inspired by light, nature, and a more mindful way of living.' },
+    { num: '03', title: 'Craftsmanship', desc: 'Refined materials and meticulous detailing brought together with precision.' },
   ];
 
   return (
@@ -40,8 +39,10 @@ export default function Project() {
               {points.map((pt) => (
                 <div key={pt.num} className={styles.projectPoint}>
                   <div className={styles.num}>{pt.num}</div>
-                  <h4>{pt.title}</h4>
-                  <p>{pt.desc}</p>
+                  <div>
+                    <h4>{pt.title}</h4>
+                    <p>{pt.desc}</p>
+                  </div>
                 </div>
               ))}
             </div>
