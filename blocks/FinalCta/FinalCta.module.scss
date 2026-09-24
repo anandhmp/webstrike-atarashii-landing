@@ -1,0 +1,33 @@
+.finalCta {
+  text-align: center;
+  padding: 180px 0;
+
+  h2 {
+    color: var(--warm-white);
+    font-weight: 300;
+    font-size: clamp(38px, 6vw, 84px);
+    line-height: 1.1;
+  }
+
+  p {
+    margin: 28px auto 0;
+    max-width: 520px;
+    color: rgba(250, 249, 245, 0.82);
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}
+
+.finalActions {
+  margin-top: 48px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .finalCta {
+    padding: 120px 0;
+  }
+}

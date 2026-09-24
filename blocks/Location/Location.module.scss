@@ -1,0 +1,61 @@
+.section {
+  padding: 150px 0;
+}
+
+.locationGrid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: clamp(40px, 6vw, 90px);
+  align-items: center;
+
+  h2 {
+    font-size: clamp(32px, 4vw, 54px);
+    font-weight: 300;
+    line-height: 1.18;
+    margin-top: 20px;
+  }
+}
+
+.locationMedia {
+  aspect-ratio: 4 / 3;
+  position: relative;
+}
+
+.locationList {
+  margin-top: 36px;
+}
+
+.locItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 0;
+  border-top: 1px solid rgba(39, 73, 62, 0.16);
+  font-size: 14.5px;
+
+  &:last-child {
+    border-bottom: 1px solid rgba(39, 73, 62, 0.16);
+  }
+
+  .name {
+    color: var(--dark-green);
+    font-weight: 500;
+  }
+
+  .dist {
+    color: var(--gold);
+    font-family: var(--serif);
+    font-style: italic;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 100px 0;
+  }
+  .locationGrid {
+    grid-template-columns: 1fr;
+  }
+}

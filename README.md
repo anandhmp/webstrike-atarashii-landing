@@ -1,1 +1,2 @@
-# webstrike-atarashii-landing
+# webstirk-atarashii-landing
+webstirk-atarashii-landing

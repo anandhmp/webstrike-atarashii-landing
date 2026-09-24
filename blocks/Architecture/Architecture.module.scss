@@ -1,0 +1,99 @@
+.section {
+  padding: 150px 0;
+}
+
+.storyRow {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: clamp(40px, 6vw, 110px);
+  align-items: center;
+
+  &.reverse {
+    grid-template-columns: 1.15fr 0.85fr;
+
+    .storyText {
+      order: 2;
+    }
+    .storyMedia {
+      order: 1;
+    }
+  }
+}
+
+.storyText {
+  h2 {
+    font-size: clamp(32px, 3.6vw, 50px);
+    font-weight: 300;
+    line-height: 1.2;
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 15.5px;
+    line-height: 1.9;
+    color: #42463f;
+    margin-top: 22px;
+    max-width: 460px;
+  }
+}
+
+.storyList {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-top: 1px solid rgba(39, 73, 62, 0.16);
+    font-size: 13.5px;
+    letter-spacing: 0.03em;
+    color: var(--dark-green);
+
+    &:last-child {
+      border-bottom: 1px solid rgba(39, 73, 62, 0.16);
+    }
+  }
+
+  span:last-child {
+    color: var(--gold);
+    font-family: var(--serif);
+    font-style: italic;
+  }
+}
+
+.storyMedia {
+  aspect-ratio: 3 / 4;
+  position: relative;
+
+  &.wide {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+.architectureBlock + .architectureBlock {
+  margin-top: 130px;
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 100px 0;
+  }
+  .storyRow,
+  .storyRow.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .storyRow.reverse {
+    .storyText,
+    .storyMedia {
+      order: initial;
+    }
+  }
+
+  .architectureBlock + .architectureBlock {
+    margin-top: 80px;
+  }
+}

@@ -1,0 +1,89 @@
+.section {
+  padding: 150px 0;
+}
+
+.amenityHero {
+  position: relative;
+
+  :global(.media) {
+    aspect-ratio: 21 / 9;
+  }
+}
+
+.amenityHeroText {
+  text-align: center;
+  max-width: 640px;
+  margin: 56px auto 0;
+
+  h2 {
+    font-size: clamp(30px, 3.6vw, 48px);
+    font-weight: 300;
+    margin-top: 18px;
+    line-height: 1.2;
+  }
+}
+
+.amenityRows {
+  margin-top: 90px;
+}
+
+.amenityRow {
+  display: grid;
+  grid-template-columns: 220px 1fr 220px;
+  align-items: center;
+  gap: 40px;
+  padding: 34px 0;
+  border-top: 1px solid rgba(39, 73, 62, 0.16);
+  cursor: default;
+
+  &:last-child {
+    border-bottom: 1px solid rgba(39, 73, 62, 0.16);
+  }
+
+  &:hover {
+    .amenityName {
+      transform: translateX(14px);
+      color: var(--gold);
+    }
+    .amenityThumb {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+.amenityIndex {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--gold);
+  font-size: 16px;
+}
+
+.amenityName {
+  font-size: clamp(22px, 2.6vw, 34px);
+  font-family: var(--serif);
+  font-weight: 400;
+  color: var(--dark-green);
+  transition: transform 0.5s var(--ease), color 0.5s var(--ease);
+}
+
+.amenityThumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  opacity: 0;
+  transform: scale(0.94);
+  transition: opacity 0.5s var(--ease), transform 0.5s var(--ease);
+  justify-self: end;
+}
+
+@media (max-width: 760px) {
+  .section {
+    padding: 100px 0;
+  }
+  .amenityRow {
+    grid-template-columns: 40px 1fr;
+  }
+  .amenityThumb {
+    display: none;
+  }
+}
