@@ -43,7 +43,7 @@ export default function Header() {
             <li><a href="#location">Location</a></li>
           </ul>
           <div className={styles.navCta}>
-            <a href="#visit" className="btn btn-ghost-light">Book a Private Visit</a>
+            <a href="#contact" className="btn btn-ghost-light">Book a Private Visit</a>
             <button
               className={styles.navBurger}
               id="burgerBtn"
@@ -64,7 +64,7 @@ export default function Header() {
         <a href="#architecture" onClick={closeDrawer}>Architecture</a>
         <a href="#amenities" onClick={closeDrawer}>Amenities</a>
         <a href="#location" onClick={closeDrawer}>Location</a>
-        <a href="#visit" className="btn btn-ghost-light" onClick={closeDrawer}>Book a Private Visit</a>
+        <a href="#contact" className="btn btn-ghost-light" onClick={closeDrawer}>Book a Private Visit</a>
       </div>
     </>
   );

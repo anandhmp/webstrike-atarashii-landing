@@ -44,7 +44,7 @@ export default function SampleResidence() {
   ];
 
   return (
-    <section className={styles.section} id="sample-residence">
+    <section className={styles.section} id="residences">
       <div className="wrap">
         <div className={styles.grid}>
           {/* Left Column Text & Feature List */}

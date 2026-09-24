@@ -103,7 +103,7 @@ export default function Residences() {
   ];
 
   return (
-    <section className={`${styles.section} bg-warm`} id="residences">
+    <section className={`${styles.section} bg-warm`} id="amenities">
       <div className="wrap">
         <div className={`${styles.resHead} reveal`}>
           <div>

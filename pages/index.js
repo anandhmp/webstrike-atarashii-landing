@@ -42,7 +42,7 @@ export default function Home() {
         {/* <Masterplan /> */}
         <Location />
         <VideoSection />
-        <FinalCta />
+        {/* <FinalCta /> */}
       </main>
       <Footer />
     </>
