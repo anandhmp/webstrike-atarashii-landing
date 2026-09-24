@@ -15,6 +15,10 @@ export default function Highlights() {
       value: '₹75 Lakhs onwards',
       label: 'Starting Price',
     },
+    {
+      value: 'Nearing Completion',
+      label: 'Handover Begins Soon',
+    },
   ];
 
   return (
@@ -27,6 +31,9 @@ export default function Highlights() {
               <div className={styles.statLabel}>{item.label}</div>
             </div>
           ))}
+        </div>
+        <div className={`${styles.tagline} reveal reveal-delay-4`}>
+          NOTHING LIKE IT!
         </div>
       </div>
     </section>
