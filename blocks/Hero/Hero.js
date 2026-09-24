@@ -42,7 +42,7 @@ export default function Hero() {
         </p>
         <div className={styles.heroActions}>
           <a href="#overview" className="btn btn-gold">Explore Serenity</a>
-          <a href="#visit" className="btn btn-ghost-light">Book a Private Visit</a>
+          <a href="#contact" className="btn btn-ghost-light">Book a Private Visit</a>
         </div>
       </div>
 

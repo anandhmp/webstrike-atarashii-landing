@@ -21,12 +21,70 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Atarashii Serenity - A Quieter Way of Living</title>
+        {/* Core Meta Tags */}
+        <title>Atarashii Serenity | 2 &amp; 3 BHK Ultra-Luxury Apartments in Trivandrum</title>
         <meta
           name="description"
-          content="Atarashii Serenity - a private collection of residences shaped by architecture, nature, and an uncompromising attention to detail."
+          content="Atarashii Serenity by Powerlink Builders - 2 &amp; 3 BHK ultra-luxury apartments in Vattiyoorkavu, Trivandrum starting from ₹75 Lakhs. Inspired by Japanese architecture &amp; serenity."
+        />
+        <meta
+          name="keywords"
+          content="Atarashii Serenity, Powerlink Builders, Luxury Apartments Trivandrum, 2 BHK Vattiyoorkavu, 3 BHK Trivandrum, Flats in Vattiyoorkavu, Luxury Flats Kerala, Japanese Architecture Residences"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.atarashiii.com" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.atarashiii.com" />
+        <meta property="og:title" content="Atarashii Serenity | 2 & 3 BHK Ultra-Luxury Apartments in Trivandrum" />
+        <meta
+          property="og:description"
+          content="Where stillness meets grandeur. Ultra-luxury 2 & 3 BHK apartments in Vattiyoorkavu, Trivandrum starting from ₹75 Lakhs."
+        />
+        <meta property="og:image" content="https://www.atarashiii.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Atarashii Serenity - Where Stillness Meets Grandeur" />
+        <meta property="og:site_name" content="Atarashii Serenity" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://www.atarashiii.com" />
+        <meta name="twitter:title" content="Atarashii Serenity | 2 & 3 BHK Ultra-Luxury Apartments in Trivandrum" />
+        <meta
+          name="twitter:description"
+          content="Where stillness meets grandeur. Ultra-luxury 2 & 3 BHK apartments in Vattiyoorkavu, Trivandrum starting from ₹75 Lakhs."
+        />
+        <meta name="twitter:image" content="https://www.atarashiii.com/og-image.jpg" />
+
+        {/* Structured Data / JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'SingleFamilyResidence',
+              'name': 'Atarashii Serenity',
+              'url': 'https://www.atarashiii.com',
+              'image': 'https://www.atarashiii.com/og-image.jpg',
+              'description': '2 & 3 BHK Ultra-Luxury Apartments in Vattiyoorkavu, Trivandrum starting from ₹75 Lakhs.',
+              'address': {
+                '@type': 'PostalAddress',
+                'addressLocality': 'Vattiyoorkavu',
+                'addressRegion': 'Trivandrum, Kerala',
+                'addressCountry': 'IN'
+              },
+              'offers': {
+                '@type': 'Offer',
+                'priceCurrency': 'INR',
+                'price': '7500000',
+                'availability': 'https://schema.org/InStock'
+              }
+            })
+          }}
+        />
       </Head>
 
       <Header />

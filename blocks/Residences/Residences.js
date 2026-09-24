@@ -126,7 +126,7 @@ export default function Residences() {
                 <h3 className={styles.resCardTitle}>{res.title}</h3>
                 <div className={styles.resMeta}>{res.meta}</div>
                 <p className={styles.resDesc}>{res.desc}</p>
-                <a href="#visit" className={`text-link ${styles.resLink}`}>
+                <a href="#contact" className={`text-link ${styles.resLink}`}>
                   Explore Space
                 </a>
               </div>
