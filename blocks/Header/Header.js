@@ -40,6 +40,7 @@ export default function Header() {
             <li><a href="#residences">The Residences</a></li>
             <li><a href="#architecture">Architecture</a></li>
             <li><a href="#amenities">Amenities</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#location">Location</a></li>
           </ul>
           <div className={styles.navCta}>
@@ -63,6 +64,7 @@ export default function Header() {
         <a href="#residences" onClick={closeDrawer}>The Residences</a>
         <a href="#architecture" onClick={closeDrawer}>Architecture</a>
         <a href="#amenities" onClick={closeDrawer}>Amenities</a>
+        <a href="#gallery" onClick={closeDrawer}>Gallery</a>
         <a href="#location" onClick={closeDrawer}>Location</a>
         <a href="#contact" className="btn btn-ghost-light" onClick={closeDrawer}>Book a Private Visit</a>
       </div>

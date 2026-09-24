@@ -10,6 +10,7 @@ import Landscape from '../blocks/Landscape/Landscape';
 import Residences from '../blocks/Residences/Residences';
 import SerenityExperience from '../blocks/SerenityExperience/SerenityExperience';
 import SampleResidence from '../blocks/SampleResidence/SampleResidence';
+import Gallery from '../blocks/Gallery/Gallery';
 import Masterplan from '../blocks/Masterplan/Masterplan';
 import Location from '../blocks/Location/Location';
 import VideoSection from '../blocks/VideoSection/VideoSection';
@@ -39,6 +40,7 @@ export default function Home() {
         <Residences />
         <SerenityExperience />
         <SampleResidence />
+        <Gallery />
         {/* <Masterplan /> */}
         <Location />
         <VideoSection />

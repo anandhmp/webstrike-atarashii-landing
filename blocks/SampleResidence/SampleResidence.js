@@ -73,12 +73,12 @@ export default function SampleResidence() {
 
           <div className={`${styles.rightCol} reveal reveal-delay-1`}>
             <img
-              src="/images/sample-residence-1.jpg"
+              src="/images/gallery-1.jpg"
               alt="Sample Residence Main Entrance Door"
               className={styles.sampleImg}
             />
             <img
-              src="/images/sample-residence-2.jpg"
+              src="/images/gallery-3.jpg"
               alt="Sample Residence Master Bathroom"
               className={styles.sampleImg}
             />
