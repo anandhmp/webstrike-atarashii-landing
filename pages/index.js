@@ -8,8 +8,8 @@ import Project from '../blocks/Project/Project';
 import Architecture from '../blocks/Architecture/Architecture';
 import Landscape from '../blocks/Landscape/Landscape';
 import Residences from '../blocks/Residences/Residences';
-import Amenities from '../blocks/Amenities/Amenities';
-import Craftsmanship from '../blocks/Craftsmanship/Craftsmanship';
+import SerenityExperience from '../blocks/SerenityExperience/SerenityExperience';
+import SampleResidence from '../blocks/SampleResidence/SampleResidence';
 import Masterplan from '../blocks/Masterplan/Masterplan';
 import Location from '../blocks/Location/Location';
 import VideoSection from '../blocks/VideoSection/VideoSection';
@@ -37,8 +37,8 @@ export default function Home() {
         <Architecture />
         <Landscape />
         <Residences />
-        <Amenities />
-        <Craftsmanship />
+        <SerenityExperience />
+        <SampleResidence />
         <Masterplan />
         <Location />
         <VideoSection />

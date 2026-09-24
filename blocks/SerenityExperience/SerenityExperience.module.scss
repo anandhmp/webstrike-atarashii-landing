@@ -1,0 +1,62 @@
+.section {
+  padding: 130px 0;
+  background: var(--warm-white);
+}
+
+.titleBox {
+  margin-bottom: 70px;
+
+  h2 {
+    font-family: var(--serif);
+    font-size: clamp(40px, 5.5vw, 76px);
+    font-weight: 300;
+    color: var(--dark-green);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+
+  .goldLine {
+    width: 140px;
+    height: 2px;
+    background: var(--gold);
+    margin-top: 24px;
+  }
+}
+
+.experienceGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 80px;
+}
+
+.experienceCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.experienceItem {
+  font-family: var(--serif);
+  font-size: clamp(17px, 1.8vw, 22px);
+  font-weight: 400;
+  color: var(--dark-green);
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(196, 169, 100, 0.45);
+  line-height: 1.35;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+
+  &:hover {
+    color: var(--gold);
+    padding-left: 6px;
+  }
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 90px 0;
+  }
+
+  .experienceGrid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

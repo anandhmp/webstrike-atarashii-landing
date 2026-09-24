@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import Media from '../Media/Media';
 import styles from './Hero.module.scss';
 
 export default function Hero() {
@@ -22,22 +21,24 @@ export default function Hero() {
 
   return (
     <section className={styles.hero} id="top">
-      <div ref={mediaRef} style={{ position: 'absolute', inset: 0, zIndex: -1 }}>
-        <Media
-          src="https://picsum.photos/seed/atarashii-hero/1920/1080"
-          alt="Hero"
-          label="Hero Video / Image"
-          className={styles.heroMedia}
+      <div className={styles.heroBgWrap}>
+        <img
+          ref={mediaRef}
+          src="/images/hero-bg.jpg"
+          alt="Atarashii Serenity Architecture"
+          className={styles.heroBgImg}
         />
+        <div className={styles.heroOverlay} />
       </div>
 
       <div className={styles.heroContent}>
         <div className={styles.heroEyebrow}>Atarashii Serenity</div>
-        <h1 className={styles.heroTitle}>A More Refined Way to Live  </h1>
+        <h1 className={styles.heroTitle}>A More Refined Way to Live</h1>
         <div className={styles.heroSub}>Nearing Completion</div>
         <p className={styles.heroCopy}>
-          2 & 3 BHK Ultra-Luxury Apartments in Vattiyoorkavu, Trivandrum
-          Starting from ₹75 Lakhs
+          2 &amp; 3 BHK Ultra-Luxury Apartments in Vattiyoorkavu, Trivandrum.
+          <br />
+          Starting from ₹75 Lakhs.
         </p>
         <div className={styles.heroActions}>
           <a href="#overview" className="btn btn-gold">Explore Serenity</a>

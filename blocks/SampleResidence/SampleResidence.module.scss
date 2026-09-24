@@ -1,0 +1,143 @@
+.section {
+  padding: 130px 0;
+  background: var(--warm-white);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: clamp(40px, 5.5vw, 84px);
+  align-items: start;
+}
+
+.leftCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleBox {
+  h2 {
+    font-family: var(--serif);
+    font-size: clamp(44px, 5.5vw, 68px);
+    font-weight: 300;
+    color: var(--dark-green);
+    line-height: 1.02;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+
+  .goldLine {
+    width: 120px;
+    height: 2px;
+    background: var(--gold);
+    margin-top: 20px;
+    margin-bottom: 28px;
+  }
+
+  .subTitle {
+    font-family: var(--serif);
+    font-size: clamp(22px, 2.4vw, 28px);
+    font-weight: 500;
+    color: var(--gold);
+    line-height: 1.25;
+    margin-bottom: 18px;
+  }
+
+  .introDesc {
+    font-family: var(--serif);
+    font-size: 16.5px;
+    line-height: 1.75;
+    color: #333734;
+    max-width: 480px;
+    margin-bottom: 32px;
+  }
+}
+
+.featuresList {
+  display: flex;
+  flex-direction: column;
+}
+
+.featureItem {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(196, 169, 100, 0.45);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.iconWrap {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--gold);
+
+  svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--gold);
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+}
+
+.featureText {
+  h4 {
+    font-family: var(--sans);
+    font-size: 17.5px;
+    font-weight: 700;
+    color: var(--dark-green);
+    margin: 0;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  p {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 14.5px;
+    color: var(--gold);
+    margin-top: 4px;
+    line-height: 1.45;
+  }
+}
+
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  :global(.media) {
+    width: 100%;
+
+    &:first-child {
+      aspect-ratio: 16 / 10.5;
+    }
+
+    &:last-child {
+      aspect-ratio: 16 / 10.5;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 90px 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
