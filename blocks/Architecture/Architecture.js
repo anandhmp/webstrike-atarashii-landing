@@ -11,17 +11,16 @@ export default function Architecture() {
             <div className="eyebrow">01 / Architecture</div>
             <h2>A Philosophy of Living, Made Tangible</h2>
             <p>
-              Inspired by Japanese philosophy. Crafted
-              for a life of balance, beauty and serenity.
+              Inspired by Japanese philosophy. Crafted for a life of balance, beauty and serenity.
             </p>
             <div className={styles.storyList}>
               <div>
                 <span>Ma - Space with Purpose</span>
-                <span>A home where nature becomes part of your everyday rhythm.</span>
+                <span>Designed to give every moment room to breathe.</span>
               </div>
               <div>
                 <span>Shizen - Living with Nature</span>
-                <span>Living with Nature</span>
+                <span>A home where nature becomes part of your everyday rhythm.</span>
               </div>
               <div>
                 <span>Omotenashi - Thoughtful Hospitality</span>
@@ -29,7 +28,7 @@ export default function Architecture() {
               </div>
               <div>
                 <span>Monozukuri - Crafted with Excellence</span>
-                <span>Built with precision, designed to stand the test of time</span>
+                <span>Built with precision, designed to stand the test of time.</span>
               </div>
             </div>
           </div>
@@ -52,20 +51,15 @@ export default function Architecture() {
             <div className={styles.storyList}>
               <div>
                 <span>Designer Lobby</span>
-                <span>A refined first impression.
-                  Warm materials, soft lighting, and timeless design.
-                </span>
+                <span>A refined first impression. Warm materials, soft lighting, and timeless design.</span>
               </div>
               <div>
                 <span>Resident Café</span>
-                <span>Savor, connect, unwind.
-                  A relaxed café setting to start your day or pause in between.</span>
+                <span>Savor, connect, unwind. A relaxed café setting to start your day or pause in between.</span>
               </div>
               <div>
                 <span>Coffee Machine</span>
-                <span>Barista-style convenience.
-                  Freshly brewed, anytime you need.
-                </span>
+                <span>Barista-style convenience. Freshly brewed, anytime you need.</span>
               </div>
               <div>
                 <span>Curated Library</span>
@@ -73,8 +67,7 @@ export default function Architecture() {
               </div>
               <div>
                 <span>Vending Convenience</span>
-                <span>Thoughtful essentials, always within reach, discreet and
-                  convenient.</span>
+                <span>Thoughtful essentials, always within reach, discreet and convenient.</span>
               </div>
               <div>
                 <span>Biometric Access</span>
@@ -82,7 +75,7 @@ export default function Architecture() {
               </div>
               <div>
                 <span>Warm Hospitality Led Design</span>
-                <span>Crafted for comfort. Every detail designed to make you feel at home</span>
+                <span>Crafted for comfort. Every detail designed to make you feel at home.</span>
               </div>
             </div>
           </div>
