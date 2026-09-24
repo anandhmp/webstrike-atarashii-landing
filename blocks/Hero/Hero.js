@@ -46,10 +46,10 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className={styles.scrollCue}>
+      {/* <div className={styles.scrollCue}>
         <span>Scroll</span>
         <div className={styles.line}></div>
-      </div>
+      </div> */}
     </section>
   );
 }

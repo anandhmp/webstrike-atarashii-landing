@@ -12,7 +12,7 @@ export default function Footer() {
             </a>
             <p>
               Architecture · Wellness · Luxury<br />
-              A private residential collection in Kerala, crafted for a quieter way of living.
+              Crafting exceptional residences where architecture, wellness, and luxury converge. A new paradigm in living.
             </p>
           </div>
 
@@ -27,28 +27,29 @@ export default function Footer() {
 
           <div className={styles.footerCol}>
             <h5>Contact</h5>
-            <p>hello@atarashiii.com</p>
-            <p>+91 00000 00000</p>
-            <p>Kerala, India</p>
-            <a href="#visit" className="text-link" style={{ marginTop: '6px', color: 'var(--gold)' }}>
-              Book a Private Visit
-            </a>
+            {/* <p>hello@atarashiii.com</p> */}
+            <p>+91 94971 74444</p>
+            <p>+91 94971 75555</p>
+            <p>Atarashii<br />
+              The House Of Powerlink Builders,<br />
+              G3 Aiswariya Jawaharnagar,<br />
+              Trivandrum, Kerala, India
+              PO- 695003</p>
           </div>
 
           <div className={styles.footerCol}>
             <h5>Follow</h5>
-            <a href="#">Instagram</a>
-            <a href="#">Pinterest</a>
-            <a href="#">LinkedIn</a>
+            <a href="https://www.instagram.com/atarashii_by_powerlinkbuilders">Instagram</a>
+            <a href="https://www.facebook.com/people/Atarashii/61572368290775/">Facebook</a>
           </div>
         </div>
 
         <div className={styles.footerBottom}>
           <span>© 2026 Atarashii. All rights reserved.</span>
-          <div className={styles.legal}>
+          {/* <div className={styles.legal}>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms</a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

@@ -4,11 +4,33 @@ import styles from './VideoSection.module.scss';
 export default function VideoSection() {
   const [formData, setFormData] = useState({ name: '', phone: '' });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [errorMsg, setErrorMsg] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (formData.name && formData.phone) {
-      setSubmitted(true);
+    if (!formData.name || !formData.phone) return;
+
+    setLoading(true);
+    setErrorMsg('');
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+      if (res.ok && data.success) {
+        setSubmitted(true);
+      } else {
+        setErrorMsg(data.message || 'Something went wrong. Please try again.');
+      }
+    } catch (err) {
+      setErrorMsg('Failed to send request. Please try again.');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -50,6 +72,7 @@ export default function VideoSection() {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className={styles.inputField}
+                  disabled={loading}
                 />
               </div>
               <div className={styles.inputWrap}>
@@ -60,11 +83,13 @@ export default function VideoSection() {
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   className={styles.inputField}
+                  disabled={loading}
                 />
               </div>
-              <button type="submit" className={styles.submitBtn}>
-                Submit Request
+              <button type="submit" className={styles.submitBtn} disabled={loading}>
+                {loading ? 'Submitting...' : 'Submit Request'}
               </button>
+              {errorMsg && <div className={styles.errorMsg}>{errorMsg}</div>}
             </form>
           )}
         </div>
