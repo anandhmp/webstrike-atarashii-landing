@@ -92,6 +92,14 @@ export default function Residences() {
       src: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1000&q=80',
       label: 'Association Hall Image',
     },
+    {
+      tag: 'Experience 12',
+      title: 'Amenities',
+      meta: 'More to Experience. Every Day.',
+      desc: 'From tranquil gardens and resort-style leisure to wellness, entertainment and spaces to come together, Serenity brings a thoughtfully curated lifestyle within reach.',
+      src: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1000&q=80',
+      label: 'Association Hall Image',
+    },
   ];
 
   return (
